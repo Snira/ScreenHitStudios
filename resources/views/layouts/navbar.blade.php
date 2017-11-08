@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-faded center-block">
+<nav class="navbar navbar-static-top bgblack">
     <div class="container">
         <div class="navbar-header">
 
@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
+                {{ config('app.name', 'Screen Hit Studios') }}
             </a>
         </div>
 

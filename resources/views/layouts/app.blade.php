@@ -5,8 +5,10 @@
 <div id="app">
     @include('layouts.navbar')
 
-    <div class="container"></div>
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
+
 </div>
 
 <!-- Scripts -->
