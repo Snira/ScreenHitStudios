@@ -1,3 +1,7 @@
+body{
+    color: whitesmoke;
+    background-color: black;
+}
 .bgblack{
     background-color: black;
 }
@@ -16,4 +20,60 @@ video {
     transform: translateX(-50%) translateY(-50%);
     background: no-repeat;
     background-size: cover;
+}
+.videopanecontent{
+    margin-top: 70%;
+}
+h2{
+    color: whitesmoke;
+}
+p{
+    color:whitesmoke;
+}
+.navbar{
+    position: fixed; !important;
+    width: 100%;
+    color:whitesmoke;
+}
+a{
+    color:whitesmoke;
+}
+.panel1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/wrapper1.jpg") no-repeat;
+    margin-top: 54%;
+    z-index: -100;
+
+}
+.panel1content{
+    margin-top: 15%;
+}
+.square1{
+    position: absolute;
+    left: 0.5%;
+    top: 0;
+    width: 49%;
+    height: 75%;
+    background: url("../img/square.jpg") no-repeat;
+    margin-top: 80%;
+    z-index: -100;
+
+}
+.square2{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 49%;
+    height: 75%;
+    background: url("../img/square2.jpg") no-repeat;
+    margin-top: 80%;
+    z-index: -100;
+}
+.footer{
+    margin-top: 60%;
+    height: 20%;
 }
