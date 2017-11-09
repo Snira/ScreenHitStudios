@@ -9,14 +9,25 @@
         </video>
     </div>
 
+    <div class="videopaneheading">
+        <div class="row">
+            <h1 class="h1">NAAM VAN SPEL</h1>
+            <p class="h3">Hier komt een omschrijving van het spel. </p>
+        </div>
+    </div>
+
     <div class="videopanecontent">
         <div class="row">
             <h2>Latest Updates & News</h2>
         </div>
+
         <div class="row">
-            <div class="col-md-2">
-                <p>Tekst</p>
+            @foreach($posts as $post)
+            <div class="col-md-2 postpreview">
+                <h3>{{$post->title}}</h3>
+                <p>{{$post->body}}</p>
             </div>
+                @endforeach
         </div>
 
 
