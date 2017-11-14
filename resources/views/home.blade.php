@@ -14,8 +14,8 @@
 
             <div class="videopaneheading">
                 <div class="row">
-                    <h1 class="h1">NAAM VAN SPEL</h1>
-                    <p class="h3">Hier komt een omschrijving van het spel. </p>
+                    <h1 class="h1">{{trans('content.home.title')}}</h1>
+                    <p class="h3">{{trans('content.home.description')}} </p>
                 </div>
             </div>
 
@@ -34,11 +34,13 @@
                 </div>
             </div>
         </div>
-        <div class="row panel1bg">
-            <div class="panel1content">
+        <div class="row">
+
+            <div class="panel1content panel1bg col-md-12">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>USP1</h2>
+                        <h2>{{trans('content.home.USP1.title')}}</h2>
+                        <p>{{trans('content.home.USP1.description')}}</p>
                     </div>
 
                 </div>
@@ -48,10 +50,13 @@
         <div class="row">
             <div class="panel2">
                 <div class="col-md-6 square1 img-responsive">
-                    <h2>USP2</h2>
+                    <h2>{{trans('content.home.USP2.title')}}</h2>
+                    <div class="col-md-4"><p>{{trans('content.home.USP2.description')}}</p>
+                    </div>
                 </div>
                 <div class="col-md-6 square2 img-responsive">
-                    <h2>USP3</h2>
+                    <h2>{{trans('content.home.USP3.title')}}</h2>
+                    <p>{{trans('content.home.USP3.description')}}</p>
                 </div>
             </div>
         </div>
