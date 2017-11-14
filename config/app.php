@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Screen Hit Studios'),
+    'name' => env('APP_NAME', 'Screenhit Studios'),
 
     /*
     |--------------------------------------------------------------------------

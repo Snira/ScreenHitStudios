@@ -12,15 +12,17 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Screen Hit Studios') }}
+                <img src="{{asset('img/Logo_Screenhit_Studios.png')}}" alt="" style="width: 8%; margin-top: -0.75%; border-radius: 50%;">
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-                &nbsp;
-            </ul>
+            <div class="nav navbar-nav navbar-items">
+                <h3 class="navbar-item"><a href="">Link1</a></h3>
+                <h3 class="navbar-item"><a href="">Link2</a></h3>
+                <h3 class="navbar-item"><a href="">Link3</a></h3>
+            </div>
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">

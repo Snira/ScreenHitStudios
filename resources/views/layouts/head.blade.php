@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="{!! asset('img/Logo_Screenhit_Studios.png') !!}" style="border-radius: 50%"/>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/vue@2.5.3/dist/vue.js"></script>
