@@ -10,7 +10,12 @@
     <link rel="icon" href="{!! asset('img/Logo_Screenhit_Studios.png') !!}" style="border-radius: 50%"/>
 
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
     <script src="https://unpkg.com/vue@2.5.3/dist/vue.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <!-- <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script> -->
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

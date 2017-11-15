@@ -1,87 +1,70 @@
+body, div, h1, h2, h3, h4, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4{
+    padding: 20px 0;
+}
+
 body {
     color: whitesmoke;
     background-color: black;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     width: 100%;
 }
 
-/*h2 {*/
-    /*color: whitesmoke;*/
-/*}*/
+.contain-width{
+    padding: 0 15vw;
+}
 
-/*p {*/
-    /*color: whitesmoke;*/
-/*}*/
 
-.navbar {
-    position: fixed!important;
+.site-header {
+    transition: top .2s ease-in-out;
+    position: fixed;
+    top: 0;
+    height: 90px;
     width: 100%;
-    color: whitesmoke;
-    background-color: black;
-}
-
-.navbar-items {
-    margin-left: 15%;
-    margin-top: -3%;
-    width: 60%;
-}
-.navbar-item{
-    margin-left: 10%;
-    float:left;
-}
-
-a {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: none;
-    color:#F18400;
-}
-.footer {
-    margin-top: 60%;
-    height: 20%;
-}
-
-
-
-
-
-
-/** INTRO */
-/** INTRO */
-
-.videopaneheading {
-    z-index: 8;
-    margin-top: 120px;
-}
-.videopanecontent {
-    z-index: 8;
-    margin-top: 30%;
-    width: 100%;
-}
-
-.videopane{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    bottom: 0;
-    left: 0;
+    display: block;
+    border-bottom: 1px rgba(51,51,51,0.8) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #000;
+    z-index: 10;
+}
+.site-header .logo{
+    margin-left: 10vw;
+}
+.site-header .logo img{
+    height: 90px;
 }
 
-video{
-    position: absolute;
-    min-height: 100vh;
-    min-width: 100vw;
-    /*height: auto;*/
-    bottom: 0;
-    overflow: hidden;
+.site-header .header-menu{
+    padding-right: 10vw;
 }
+
+.site-header .header-menu a, .site-header .header-menu a:focus{
+    float: left;
+    width: 100px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #F18400;
+}
+
+.site-header .header-menu a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.site-header.nav-up {
+    top: -90px;
+}
+
+
+/** INTRO */
+/** INTRO */
 
 .intro{
     /*background-image: url(../../uploads/london-negative-WEB2.jpg);*/
@@ -94,23 +77,111 @@ video{
     text-shadow: 0 0 8px #000;
     width: 100%;
     height: 100vh;
-    min-height: 500px;
+    min-height: 650px;
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
+    justify-content: space-between;
     flex-direction: column;
 }
 
-/* POSTS */
-/* POSTS */
-/* POSTS */
+.intro .videopane{
+    position: absolute;
+    height: 100vh;
+    min-height: 650px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: #000;
+}
 
-.postpreview {
+.intro .videopane video{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    /*height: auto;*/
+    bottom: 0;
+    overflow: hidden;
+}
+
+.intro .intro-heading {
+    z-index: 8;
+    margin-top: 120px;
+}
+
+/* INTRO POSTS */
+/* INTRO POSTS */
+/* INTRO POSTS */
+.intro .news-content {
+    z-index: 8;
+    width: 100%;
+}
+
+.intro .news-content .posts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.intro .news-content .posts .postpreview {
     background-color: #F18400;
     /*border: solid black;*/
     width: 20%;
+    height: 250px;
+
     /*margin: 1%;*/
 }
+
+/* THE GAME */
+/* THE GAME */
+/* THE GAME */
+
+.the-game{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+    color: black;
+    flex-direction: column;
+}
+/* THE GAME */
+/* THE GAME */
+/* THE GAME */
+
+.about-us{
+    width: 100%;
+    background: #F18400;
+}
+
+.about-us .people{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .people .person{
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px 0;
+
+}
+
+.about-us .people .person img{
+    width: 100%;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+.footer {
+    margin: 10px 0;
+}
+
+
+
+
+
 
 /*@media all and (min-width: 1200px) {*/
     /*video {*/

@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Lignous Trail',
+    'title' => 'Lignum Trail',
     'home' => [
-        'title' => 'Play Lignous Trail',
-        'description' => 'Complete our complex puzzles by using the camera in a strategic way. Your character consists of different colours. 
+        'title' => 'Play Lignum Trail',
+        'description' => 'Complete our complex puzzles by using the camera in a strategic way. Your character consists of different colours.
     If your blue arm, hits a blue wall, you lose your arm! Try to get through our levels by looking away from colours that are negative for you, and try to find your way through',
         'USP1' => [
             'title' => 'Use the camera!',

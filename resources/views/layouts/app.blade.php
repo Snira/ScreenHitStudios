@@ -2,15 +2,15 @@
 <html lang="{{ app()->getLocale() }}">
 @include('layouts.head')
 <body>
-<div id="app">
+<!-- <div id="app"> -->
     @include('layouts.navbar')
 
-    <div class="container">
+    <!-- <div class="container"> -->
         @yield('content')
-    </div>
+    <!-- </div> -->
     @include('layouts.footer')
 
-</div>
+<!-- </div> -->
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
