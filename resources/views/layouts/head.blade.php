@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Screenhit Studios') }}</title>
     <link rel="icon" href="{!! asset('img/Logo_Screenhit_Studios.png') !!}" style="border-radius: 50%"/>
 
     <!-- Scripts -->
@@ -18,4 +18,3 @@
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
 </head>
-
