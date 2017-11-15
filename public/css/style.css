@@ -20,6 +20,7 @@ body {
 .navbar {
     position: fixed!important;
     width: 100%;
+    height: 100px;
     color: whitesmoke;
     background-color: black;
 }
@@ -65,12 +66,18 @@ a:hover{
 
 .videopane{
     position: absolute;
-    height: 100vh;
     overflow: hidden;
     width: 100%;
     bottom: 0;
     left: 0;
     background: #000;
+}
+.imagepane{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom:0;
+    left:0;
 }
 
 video{
@@ -92,6 +99,22 @@ video{
     min-height: 500px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.square1 {
+
+    background: url("../img/Achtergrond_3.png") no-repeat;
+    background-position: left bottom;
+    z-index: -100;
+    background-size: auto 100%;
+    margin:0;
+    color:#fff;
+    text-shadow: 0 0 8px #000;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    align-items: left;
     justify-content: center;
 }
 
@@ -118,15 +141,7 @@ video{
 
      /*}*/
 
-    /*.square1 {*/
-        /*position: absolute;*/
-        /*left: 0.5%;*/
-        /*top: 165%;*/
-        /*width: 49%;*/
-        /*height: 75%;*/
-        /*background: url("../img/Achtergrond_3.png") no-repeat;*/
-        /*z-index: -100;*/
-        /*background-size: 100%;*/
+    /*
 
 
     /*}*/

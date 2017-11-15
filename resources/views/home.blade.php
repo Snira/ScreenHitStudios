@@ -37,7 +37,7 @@
         <div class="row">
 
             <div class="panel1content panel1bg col-md-12">
-                <div class="row">
+                <div id="usp1" class="row">
                     <div class="col-md-6">
                         <h2>{{trans('content.home.USP1.title')}}</h2>
                         <p>{{trans('content.home.USP1.description')}}</p>
@@ -48,7 +48,7 @@
 
         </div>
         <div class="row">
-            <div class="panel2">
+            <div class="imagepane">
                 <div class="col-md-6 col-sm-12 square1 img-responsive">
                     <h2>{{trans('content.home.USP2.title')}}</h2>
                     <div class="col-md-4"><p>{{trans('content.home.USP2.description')}}</p>
