@@ -3,9 +3,9 @@
 @section('content')
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="videopane bgblack">
-                <video id="bg" width="480" height="320" autoplay="autoplay" loop="loop" muted="muted">
+        <div class="row intro">
+            <div class="videopane">
+                <video id="bg" autoplay="autoplay" loop="loop" muted="muted">
                     <source src="{{asset('video/Placeholder Video.mp4')}}" type="video/mp4">
 
                     Your browser does not support the video tag.
@@ -49,12 +49,12 @@
         </div>
         <div class="row">
             <div class="panel2">
-                <div class="col-md-6 square1 img-responsive">
+                <div class="col-md-6 col-sm-12 square1 img-responsive">
                     <h2>{{trans('content.home.USP2.title')}}</h2>
                     <div class="col-md-4"><p>{{trans('content.home.USP2.description')}}</p>
                     </div>
                 </div>
-                <div class="col-md-6 square2 img-responsive">
+                <div class="col-md-6 col-sm-12 square2 img-responsive">
                     <h2>{{trans('content.home.USP3.title')}}</h2>
                     <p>{{trans('content.home.USP3.description')}}</p>
                 </div>
