@@ -13,6 +13,11 @@
                 <label class="col-md-4 control-label" for="body">Body</label>
                 <input required class="form-control" id="body" type="text" name="posts[body]">
             </div>
+
+            <div class="form-group">
+                <label for="image">Afbeelding</label>
+                <input class="input" name="image" type="file">
+            </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <a href="{{route('admin.posts')}}" class="btn btn-default">Annuleer</a>

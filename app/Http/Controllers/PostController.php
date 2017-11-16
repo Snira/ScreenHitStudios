@@ -33,11 +33,17 @@ class PostController extends Controller
         $this->validate($request, [
             'posts.title' => 'required',
             'posts.body'  => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
-        $data = $request->input('posts');
+        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('img'), $imageName);
 
-        $post = Post::create($data);
+        $post = new Post;
+        $post->title = $request->input('posts.title');
+        $post->body = $request->input('posts.body');
+        $post->imagepath = $imageName;
+        $post->save();
 
         //Hier mailtje sturen naar users 'nieuwe post'
 
