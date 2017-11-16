@@ -62,7 +62,16 @@ body {
     top: -90px;
 }
 
-
+#myModal{
+    color: black;
+}
+.modal-title{
+    color:#F18400;
+    border: none;
+}
+.close{
+    color:#F18400;
+}
 /** INTRO */
 /** INTRO */
 

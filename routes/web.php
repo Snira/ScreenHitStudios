@@ -14,6 +14,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('/signup', 'HomeController@letterSignUp')->name('home.signup');
 
 Route::resource('/post','PostController');
 
