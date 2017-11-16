@@ -283,7 +283,57 @@ body {
     }
 }
 
+@media screen and (max-width: 720px){
+    .intro{
+        height: auto;
+    }
+    .intro .intro-heading {
+        height: 500px;
+    }
+    .intro .videopane{
+        display: none;
+    }
 
+    .intro .news-content .posts{
+        flex-wrap: wrap;
+    }
+
+    .intro .news-content .posts .postpreview{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .intro .news-content .posts .postpreview h3{
+        font-size: 16px;
+        padding: 20px 0 5px 0;
+    }
+
+    .intro .news-content .posts .postpreview p{
+        font-size: 12px;
+    }
+
+    .about-us .people .person{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-us .people .person .info{
+        padding: 0 5px;
+    }
+
+    .about-us .people .person .info h3{
+        font-size: 16px;
+    }
+
+    .about-us .people .person .info p{
+        font-size: 12px;
+    }
+
+    .contact form button{
+        margin-left: 4px;
+    }
+}
 
 
 /*@media all and (min-width: 1200px) {*/
