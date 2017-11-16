@@ -20,25 +20,25 @@
     </div>
 </div>
 
-<div class="intro contain-width">
-    <div class="videopane">
+<div class="intro">
+    <div class="videopane contain-width">
         <video id="bg" autoplay="autoplay" loop="loop" muted="muted">
             <source src="{{asset('video/HoltBackground.mp4')}}" type="video/mp4">
                 Your browser does not support the video tag.
         </video>
     </div>
-    <div class="intro-heading">
+    <div class="intro-heading contain-width">
         <h1>{{trans('content.home.title')}}</h1>
         <p>{{trans('content.home.description')}} </p>
     </div>
 
-    <div class="news-content">
+    <div class="news-content contain-width">
         <h2>Latest Updates & News</h2>
 
 
         <div class="posts">
             @foreach($posts as $post)
-            <div class="col-md-2 postpreview">
+            <div class="col-md-2 postpreview" style="background-image: url({{asset('img/'.$post->imagepath)}})">
                 <h3>{{$post->title}}</h3>
                 <p>{{$post->body}}</p>
             </div>
@@ -56,10 +56,6 @@
     <h3>{{trans('content.home.USP2.title')}}</h3>
     <p>
         {{trans('content.home.USP2.description')}}
-    </p>
-    <h3>{{trans('content.home.USP3.title')}}</h3>
-    <p>
-        {{trans('content.home.USP3.description')}}
     </p>
 </div>
 
