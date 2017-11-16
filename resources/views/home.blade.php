@@ -62,11 +62,39 @@
 <div class="about-us contain-width">
     <h3>Meet the team</h3>
     <div class="people">
-        @for($i = 0; $i < 15; $i++)
+
         <div class="person">
-            <img src="{{asset('img/Holt_v2.png')}}" alt="person">
+            <img src="{{asset('img/Daney.png')}}" alt="person">
         </div>
-        @endfor
+        <div class="person">
+            <img src="{{asset('img/Saskia.png')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Maarten.jpg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Boy.jpg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Alex.jpg')}}"  alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Kevin.jpeg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Wesley.jpg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Alex.jpg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/martijn-rietveld.jpg')}}" alt="person">
+        </div>
+        <div class="person">
+            <img src="{{asset('img/JJ.jpg')}}" alt="person">
+        </div>
+
+
     </div>
 </div>
 
