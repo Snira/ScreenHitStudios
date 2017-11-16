@@ -161,20 +161,25 @@
 </div>
 
 -->
-<form method="post" enctype="multipart/form-data" action="{{ route('home.signup') }}">
-    <label for="email"></label>
-    <input type="email" id="email" name="email">
-    <button>Schrijf mij in!</button>
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-</form>
-@if(session('status'))
-<button type="button" class=" hidden" data-toggle="modal" data-target="#myModal">Open Modal</button>
-<script>
-$( document ).ready( function() {
-    $('#myModal').modal( 'toggle' );
-});
-</script>
-@endif
+
+<div class="contact contain-width">
+    <h2>Let us keep you up to date!</h2>
+    <form method="post" enctype="multipart/form-data" action="{{ route('home.signup') }}">
+        <label for="email"></label>
+        <input type="email" id="email" name="email">
+        <button>Subscribe!</button>
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    </form>
+    @if(session('status'))
+    <button type="button" class=" hidden" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    <script>
+    $( document ).ready( function() {
+        $('#myModal').modal( 'toggle' );
+    });
+    </script>
+    @endif
+</div>
+
 
 
 @endsection
