@@ -1,26 +1,33 @@
-
-function goTo (divClass) {
-    $('html, body').animate({
-        scrollTop: $(divClass).offset().top + 'px'
-    }, 'slow');
-    return this;
-}
-
-// Hide Header on on scroll down
 var didScroll;
+var animating = false
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
+
+function goTo (divClass) {
+    animating = true
+    $('html, body').animate({
+        scrollTop: ($(divClass).offset().top - 90) + 'px'
+    }, 'slow', function(){
+        setTimeout(activateScroll, 150);
+    });
+    return this;
+}
+
+function activateScroll(){
+    didScroll = false;
+    animating = false;
+}
+
 
 $(window).scroll(function(event){
     didScroll = true;
 });
 
 setInterval(function() {
-    if (didScroll) {
+    if (didScroll & !animating) {
         hasScrolled();
         didScroll = false;
-
     }
 }, 250);
 
@@ -30,7 +37,7 @@ function hasScrolled() {
     if(Math.abs(lastScrollTop - st) <= delta){
         return;
     }
-    
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop){// && st > navbarHeight){
