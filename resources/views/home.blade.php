@@ -65,102 +65,111 @@
 
         <div class="person">
             <img src="{{asset('img/Daney.png')}}" alt="person">
-        </div>
-        <div class="person">
-            <img src="{{asset('img/Saskia.png')}}" alt="person">
+            <div class="info">
+                <h3>Daney</h3>
+                <p>Producer</p>
+            </div>
         </div>
         <div class="person">
             <img src="{{asset('img/Maarten.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Maarten</h3>
+                <p>Lead Marketing</p>
+            </div>
         </div>
         <div class="person">
             <img src="{{asset('img/Boy.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Boy</h3>
+                <p>Marketing</p>
+            </div>
         </div>
         <div class="person">
-            <img src="{{asset('img/Alex.jpg')}}"  alt="person">
+            <img src="{{asset('img/sarah.png')}}" alt="person">
+            <div class="info">
+                <h3>Sarah</h3>
+                <p>Lead Artist</p>
+            </div>
         </div>
         <div class="person">
-            <img src="{{asset('img/Kevin.jpeg')}}" alt="person">
-        </div>
-        <div class="person">
-            <img src="{{asset('img/Wesley.jpg')}}" alt="person">
-        </div>
-        <div class="person">
-            <img src="{{asset('img/Alex.jpg')}}" alt="person">
-        </div>
-        <div class="person">
-            <img src="{{asset('img/martijn-rietveld.jpg')}}" alt="person">
+            <img src="{{asset('img/Saskia.png')}}" alt="person">
+            <div class="info">
+                <h3>Saskia</h3>
+                <p>Artist</p>
+            </div>
         </div>
         <div class="person">
             <img src="{{asset('img/JJ.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Jayjay</h3>
+                <p>Artist</p>
+            </div>
         </div>
-
-
+        <div class="person">
+            <img src="{{asset('img/Wesley.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Wesley</h3>
+                <p>Lead Designer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Alex.jpg')}}"  alt="person">
+            <div class="info">
+                <h3>Alex</h3>
+                <p>Designer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Kevin.jpeg')}}" alt="person" style="width: auto; height: 100%;">
+            <div class="info">
+                <h3>Kevin</h3>
+                <p>Designer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Holt_v2.png')}}" alt="person">
+            <div class="info">
+                <h3>Rianne</h3>
+                <p>Designer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/martijn-rietveld.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Martijn</h3>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/bram.png')}}" alt="person">
+            <div class="info">
+                <h3>Bram</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/florian.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Florian</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/Jesse.jpg')}}" alt="person">
+            <div class="info">
+                <h3>Jesse</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{{asset('img/roy.jpeg')}}" alt="person">
+            <div class="info">
+                <h3>Roy</h3>
+                <p>Developer</p>
+            </div>
+        </div>
     </div>
 </div>
-
-    <!--
-    <div class="container-fluid">
-    <div class="row intro">
-    <div class="videopane">
-    <video id="bg" autoplay="autoplay" loop="loop" muted="muted">
-    <source src="{{asset('video/Placeholder Video.mp4')}}" type="video/mp4">
-
-    Your browser does not support the video tag.
-</video>
-</div>
-
-<div class="videopaneheading">
-<div class="row">
-<h1 class="h1">{{trans('content.home.title')}}</h1>
-<p class="h3">{{trans('content.home.description')}} </p>
-</div>
-</div>
-
-<div class="videopanecontent">
-<div class="row">
-<h2>Latest Updates & News</h2>
-</div>
-
-<div class="row">
-@foreach($posts as $post)
-<div class="col-md-2 postpreview">
-<h3>{{$post->title}}</h3>
-<p>{{$post->body}}</p>
-</div>
-@endforeach
-</div>
-</div>
-</div>
-<div class="row">
-
-<div class="panel1content panel1bg col-md-12">
-<div class="row">
-<div class="col-md-6">
-<h2>{{trans('content.home.USP1.title')}}</h2>
-<p>{{trans('content.home.USP1.description')}}</p>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="row">
-<div class="panel2">
-<div class="col-md-6 col-sm-12 square1 img-responsive">
-<h2>{{trans('content.home.USP2.title')}}</h2>
-<div class="col-md-4"><p>{{trans('content.home.USP2.description')}}</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-12 square2 img-responsive">
-<h2>{{trans('content.home.USP3.title')}}</h2>
-<p>{{trans('content.home.USP3.description')}}</p>
-</div>
-</div>
-</div>
-
-</div>
-
--->
 
 <div class="contact contain-width">
     <h2>Let us keep you up to date!</h2>
