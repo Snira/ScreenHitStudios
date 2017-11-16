@@ -6,7 +6,7 @@
 <div class="intro contain-width">
     <div class="videopane">
         <video id="bg" autoplay="autoplay" loop="loop" muted="muted">
-            <source src="{{asset('video/Placeholder Video.mp4')}}" type="video/mp4">
+            <source src="{{asset('video/HoltBackground.mp4')}}" type="video/mp4">
                 Your browser does not support the video tag.
         </video>
     </div>
