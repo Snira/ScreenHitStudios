@@ -26,7 +26,7 @@ body {
     height: 90px;
     width: 100%;
     display: block;
-    border-bottom: 1px rgba(51,51,51,0.8) solid;
+    /*border-bottom: 1px rgba(51,51,51,0.8) solid;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
